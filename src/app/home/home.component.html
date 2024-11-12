@@ -1,0 +1,17 @@
+<div *ngIf="loading">Chargement des personnages...</div>
+<div *ngIf="error">
+  Erreur lors de la récupération des personnages : {{ error.message }}
+</div>
+
+<main class="main">
+  <h1>first projet avec Angulare</h1>
+  <app-photo-card
+    *ngFor="let character of characters"
+    [name]="character.name"
+    [image]="character.image"
+    [status]="character.status"
+    [dimension]="character.location.dimension || 'Inconnue'"
+  ></app-photo-card>
+</main>
+
+<router-outlet></router-outlet>
