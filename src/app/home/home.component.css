@@ -1,0 +1,22 @@
+body {
+  background-color: red;
+}
+
+main {
+  h1 {
+    text-align: center;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+    margin: 0 10%;
+    max-width: 1790px;
+  }
+  section:hover > :not(:hover) {
+    transition: 0.25s;
+    filter: saturate(0.1) blur(2px);
+    /* filter: blur(2px); */
+  }
+}

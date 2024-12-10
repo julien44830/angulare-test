@@ -5,13 +5,15 @@
 
 <main class="main">
   <h1>first projet avec Angulare</h1>
-  <app-photo-card
-    *ngFor="let character of characters"
-    [name]="character.name"
-    [image]="character.image"
-    [status]="character.status"
-    [dimension]="character.location.dimension || 'Inconnue'"
-  ></app-photo-card>
+  <section>
+    <app-photo-card
+      *ngFor="let character of characters"
+      [name]="character.name"
+      [image]="character.image"
+      [status]="character.status"
+      [dimension]="character.location.dimension || 'Inconnue'"
+    ></app-photo-card>
+  </section>
 </main>
 
 <router-outlet></router-outlet>

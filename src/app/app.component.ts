@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterModule } from '@angular/router';
-import { PhotoCardComponent } from './photo-card/photo-card.component';
 import { provideApollo } from 'apollo-angular';
 import { InMemoryCache, HttpLink, ApolloClientOptions } from '@apollo/client/core';
 import { Apollo, gql } from 'apollo-angular';
